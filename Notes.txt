@@ -2,4 +2,5 @@ Notes from official Django documentation in the process of creating Polling app:
 
 --> If we need to use other Db than SQLite, need to change configuration in settings.py file (Under DATABASES, change it to Postgress or anything).
 --> Models are in "django.db.models.Model".
---> 
+--> If something from query doesn't exists, need to raise Http404. Django provides better shortcut for this. "get_object_or_404" will do this purpose!
+--> In app.urls.py file, it's better practice to use var called app_name & in urls pattern used in html files, include 'app_name:url_name'. This is to handle url better when we use multiple apps.
