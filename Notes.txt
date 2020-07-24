@@ -1,0 +1,5 @@
+Notes from official Django documentation in the process of creating Polling app:
+
+--> If we need to use other Db than SQLite, need to change configuration in settings.py file (Under DATABASES, change it to Postgress or anything).
+--> Models are in "django.db.models.Model".
+--> 
